@@ -11,7 +11,7 @@ void gotoxy(int x, int y){
 
 using namespace std;
 int datake=0;
-int maks=3;
+int datamaks=3;
 struct paket{
     char item[30];
     int weight;
@@ -31,7 +31,7 @@ void bersihlayar(){
 }
 
 void tambahdata(int x){
-    if(datake<maks){
+    if(datake<datamaks){
         gotoxy(20,15); cout << "Inputkan nama produk:  :";
             cin >> kirim[x].item;
         gotoxy(20,16); cout << "Inputkan weight         :";
